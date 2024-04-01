@@ -1,0 +1,27 @@
+abs(double a): Devuelve el valor absoluto de un número.
+    Ejemplo:
+    double absoluto = Math.abs(-3.14); // Devuelve 3.14
+
+sqrt(double a): Devuelve la raíz cuadrada de un número.
+    Ejemplo:
+    double raiz = Math.sqrt(25); // Devuelve 5.0
+
+pow(double a, double b): Devuelve el resultado de elevar un número a la potencia de otro.
+    Ejemplo:
+    double potencia = Math.pow(2, 3); // Devuelve 8.0
+
+random(): Devuelve un número decimal aleatorio entre 0.0 (inclusive) y 1.0 (exclusivo).
+    Ejemplo:
+    double aleatorio = Math.random();
+
+round(double a): Devuelve el valor redondeado de un número.
+    Ejemplo:
+    long redondeado = Math.round(3.7); // Devuelve 4
+
+max(double a, double b): Devuelve el máximo entre dos números.
+    Ejemplo:
+    double maximo = Math.max(10.5, 8.2); // Devuelve 10.5
+
+min(double a, double b): Devuelve el mínimo entre dos números.
+    Ejemplo:
+    double minimo = Math.min(-5, -8); // Devuelve -8.0

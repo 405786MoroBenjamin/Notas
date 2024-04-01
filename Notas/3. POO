@@ -1,0 +1,94 @@
+- CLASES
+    access_modifier class <class_name>
+    {
+        data member;
+        method;
+        constructor;
+        nested class;
+        interface;
+    }
+    Ejemplo:
+    public class GFG
+     {
+
+        static String Employee_name;
+        static float Employee_salary;
+
+        static void set(String n, float p) {
+            Employee_name  = n;
+            Employee_salary  = p;
+        }
+
+        static void get() {
+            System.out.println("Employee name is: " +Employee_name );
+            System.out.println("Employee CTC is: " + Employee_salary);
+        }
+
+        public static void main(String args[]) {
+            GFG.set("Rathod Avinash", 10000.0f);
+            GFG.get();
+        }
+    }
+
+- MODIFICADORES
+    public: Accesible desde cualquier lugar. No hay restricciones de acceso.
+    protected: Accesible dentro del mismo paquete y también por parte de cualquier subclase, incluso si la subclase está en un paquete diferente.
+    default (o package-private): Accesible solo dentro del mismo paquete.
+    private: Accesible solo dentro de la misma clase.
+
+- METODOS
+    <access_modifier> <return_type> <method_name>( list_of_parameters)
+    {
+        //body
+    }
+
+    Ejemplo:
+    // Este podrá ser accedido por cualquiera
+    void method_name(){
+      body // instance area
+    }
+
+    // Este sera propio de la clase
+    static void method_name(){
+      body // static area
+    }
+
+- PADRES
+    class BaseClass{
+    	abstract string name // Variable la cual el hijo deberia instanciar si o si
+    }
+
+    class DerivedClass extends BaseClass
+    {
+    	@Override string name = ""
+    }
+
+- INTERFACES
+    // Con un conjunto de metodos que el 'implementado' debe tener si o si
+    // En caso de no tenerlo daria error
+    // Muy parecido a ser hijo de una clase
+    interface In1 {
+
+        // public, static and final
+        final int a = 10;
+
+        // public and abstract
+        void display();
+    }
+
+    class TestClass implements In1 {
+
+        // Implementing the capabilities of
+        // interface.
+        public void display(){
+          System.out.println("Geek");
+        }
+
+        // Driver Code
+        public static void main(String[] args)
+        {
+            TestClass t = new TestClass();
+            t.display();
+            System.out.println(a);
+        }
+    }

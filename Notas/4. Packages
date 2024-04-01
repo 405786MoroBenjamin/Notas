@@ -1,0 +1,19 @@
+- QUE SON
+En Java, un package (paquete) es un mecanismo para organizar
+y estructurar clases relacionadas en un espacio de nombres (namespace).
+Los packages proporcionan una forma de agrupar clases relacionadas
+y evitar conflictos de nombres entre clases que pueden tener nombres
+idénticos pero que se utilizan en contextos diferentes.
+    -- Basicamente relacionan distintos archivos de un mismo proyecto, para que puedan compartir
+        metodos, clases, etc
+
+- COMO SON
+    Se utilizan de la siguiente manera:
+    import package.NOMBRE.NOMBRE.ETC
+    package.NOMBRE.NOMBRE.ETC
+
+    Ejemplos:
+        package org.example;
+        import package.name.Class;   // Import a single class
+        import package.name.*;   // Import the whole package
+        import java.util.Scanner;

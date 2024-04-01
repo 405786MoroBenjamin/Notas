@@ -1,0 +1,570 @@
+- OUTPUT
+    public class A {
+    	public static void main(String[] args)
+    	{
+    		System.out.println("Soy un OUT!");
+    	}
+    }
+- INPUT
+    Scanner scanner = new Scanner(system.in);
+    tipoDato variable = scanner.nextXXX();
+
+    XXX seria el tipo de dato
+    nextBoolean()	Reads a boolean value from the user
+    nextByte()	Reads a byte value from the user
+    nextDouble()	Reads a double value from the user
+    nextFloat()	Reads a float value from the user
+    nextInt()	Reads a int value from the user
+    nextLine()	Reads a String value from the user
+    nextLong()	Reads a long value from the user
+    nextShort()	Reads a short value from the user
+
+- VARIABLES
+    byte byteVar;
+    short shortVar;
+    int intVar;
+    long longVar;
+    float floatVar;
+    double doubleVar;
+    char charVar;
+    String s;
+
+- OPERADORES
+    De operaciones:
+        * : Multiplication
+        / : Division
+        % : Modulo // Da como el resultado la resta de la division
+        + : Addition
+        – : Subtraction
+
+    Unarios:
+        ++ : Sirve para incrementar una variable
+        -- : Sirve para decrementar una variable
+            (Pueden ser post o pre
+            --Var
+            Var--
+            ++Var
+            Var++)
+
+    Comparadores:
+          ==
+          !=
+          <
+          <=
+          >
+          >=
+
+    Logicos:
+        && : AND
+        || : OR
+        ! : NOT
+
+- CONDICIONALES
+    if(condition)
+    {
+       // Statements to execute if
+       // condition is true
+    }
+
+    else
+    {
+        // Executes this block if
+        // condition is false
+    }
+
+    switch (expression)
+    {
+      case value1:
+        statement1;
+        break;
+      case value2:
+        statement2;
+        break;
+      .
+      .
+      case valueN:
+        statementN;
+        break;
+      default:
+        statementDefault;
+    }
+
+- JUMPERS:
+    Break: Sale de un loop/bucle o switch
+    Continue: Sigue a la siguiente vuelta de un bucle
+    Return: Sirve para devolver algo en un metodo
+
+- BUCLES
+    while (boolean condition)
+    {
+       loop statements...
+    }
+
+    for (initialization condition; testing condition;increment/decrement)
+    {
+        statement(s)
+    }
+
+    do
+    {
+        statements..
+    }
+    while (condition);
+
+    for (type var : array)
+    {
+        statements using var;
+    }
+
+- ARRAYS
+    -- type var-name[];
+    -- type[] var-name;
+
+    var-name = new type [size];
+
+    Ejemplificacion:
+        int intArray[];
+        intArray = new int[20];
+
+        int[] intArray = new int[]{ 1,2,3,4,5,6,7,8,9,10 };
+
+    - Metodos / para arrays
+        length: Este método devuelve la longitud del array, es decir, el número de elementos que contiene
+            Ejemplo:
+            int[] array = {1, 2, 3, 4, 5};
+            int longitud = array.length; // Devuelve 5
+
+        clone: Este método crea y devuelve una copia exacta del array.
+            Ejemplo:
+            int[] array = {1, 2, 3, 4, 5};
+            int[] copiaArray = array.clone(); // Crea una copia exacta de 'array'
+
+        toString: Este método devuelve una representación en forma de cadena del array.
+            Ejemplo:
+            int[] array = {1, 2, 3, 4, 5};
+            String cadena = Arrays.toString(array); // Devuelve "[1, 2, 3, 4, 5]"
+
+        sort: Este método ordena los elementos del array en orden ascendente.
+            Ejemplo:
+            int[] array = {5, 2, 8, 1, 3};
+            Arrays.sort(array); // Ordena 'array': {1, 2, 3, 5, 8}
+
+        binarySearch: Este método realiza una búsqueda binaria en el array para encontrar un elemento específico y devuelve su índice si se encuentra, de lo contrario, devuelve un valor negativo.
+            Ejemplo:
+            int[] array = {1, 2, 3, 4, 5};
+            int indice = Arrays.binarySearch(array, 3); // Devuelve 2 (índice de 3 en el array)
+
+        fill: Este método asigna el mismo valor a cada elemento del array.
+            Ejemplo:
+            int[] array = new int[5];
+            Arrays.fill(array, 10); // Llena 'array' con el valor 10: {10, 10, 10, 10, 10}
+
+        equals: Este método compara dos arrays para verificar si contienen los mismos elementos en el mismo orden.
+            Ejemplo:
+            int[] array1 = {1, 2, 3};
+            int[] array2 = {1, 2, 3};
+            boolean iguales = Arrays.equals(array1, array2); // Devuelve true
+
+- ENUMS
+    enum Level {
+      LOW,
+      MEDIUM,
+      HIGH
+    }
+
+- DATE & TIME
+    ● java.time.LocalDate: es una clase que representa una fecha sin hora ni zona
+    horaria. Se utiliza principalmente para operaciones de fecha simples, como
+    cálculos de días transcurridos entre dos fechas.
+
+    ● java.time.LocalDateTime: es una clase que representa una fecha y hora, sin
+    zona horaria. Se utiliza para operaciones de fecha y hora más complejas,
+    como cálculos de diferencia de tiempo entre dos momentos específicos.
+
+    ● java.time.ZonedDateTime: es una clase que representa una fecha y hora en
+    una zona horaria específica. Se utiliza para trabajar con fechas y horas en
+    diferentes zonas horarias.
+
+- ARRAYLIST
+    En Java, ArrayList es una clase que implementa la interfaz List y proporciona
+    una implementación de un arreglo dinámico, lo que significa que puede crecer
+    y encogerse dinámicamente según sea necesario. Es parte del paquete java.util
+
+    import java.util.ArrayList; // import the ArrayList class
+
+    ArrayList<String> cars = new ArrayList<String>(); // Create an ArrayList object
+        cars.add("Volvo");
+        cars.get(0);
+
+        numeros.remove(1); // Segun index
+        colores.remove("Volvo"); // Segun el contenido
+        cars.clear(); // Borrar todo directamente
+
+        cars.size(); // Devuelve el largo del array
+
+- LINKEDLIST
+    Una Java LinkedList es una implementación de la interfaz List en Java que organiza
+    los elementos en una estructura de lista enlazada. En una lista enlazada, cada elemento
+    (llamado nodo) contiene un valor y una referencia al siguiente nodo en la secuencia.
+    En una LinkedList de Java, cada nodo contiene un valor y una referencia al siguiente nodo,
+    lo que permite una inserción y eliminación eficiente de elementos en cualquier posición
+    de la lista
+
+    Explicacion mas simple:
+    Una LinkedList en Java funciona de manera similar a esta lista de reproducción.
+    En una LinkedList, cada canción (o elemento) tiene una referencia a la siguiente
+    canción en la lista.
+    Por ejemplo:
+        Canción 1 -> Canción 2 -> Canción 3 -> Canción 4 -> Canción 5
+
+        Aquí, la Canción 1 está vinculada a la Canción 2, la Canción 2
+        está vinculada a la Canción 3, y así sucesivamente.
+
+        Ahora, digamos que quieres agregar una nueva canción entre la Canción 2 y
+        la Canción 3. Con una LinkedList, puedes hacerlo fácilmente. Solo necesitas cambiar
+        las referencias de la Canción 2 para que apunte a la nueva canción y que esta nueva
+        canción apunte a la Canción 3. No necesitas reorganizar todas las canciones, simplemente
+        ajustas las referencias. Así:
+        Canción 1 -> Canción 2 -> Nueva Canción -> Canción 3 -> Canción 4 -> Canción 5
+
+        Sin embargo, si quisieras acceder directamente a la Canción 5, tendrías
+        que pasar por cada canción desde el principio de la lista hasta llegar a ella,
+        ya que las LinkedList no tienen un acceso aleatorio rápido como las matrices.
+        Por lo tanto, si necesitas acceso rápido a elementos en posiciones específicas,
+        una ArrayList podría ser más adecuada.
+
+    Ejemplo Practico:
+    import java.util.LinkedList;
+
+    public class Main {
+      public static void main(String[] args) {
+        LinkedList<String> cars = new LinkedList<String>();
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("Ford");
+        cars.add("Mazda");
+        System.out.println(cars);
+      }
+    }
+
+    - MÉTODOS:
+    addFirst()	Adds an item to the beginning of the list.
+    addLast()	Add an item to the end of the list
+    removeFirst()	Remove an item from the beginning of the list.
+    removeLast()	Remove an item from the end of the list
+    getFirst()	Get the item at the beginning of the list
+    getLast()	Get the item at the end of the list
+
+- HASHMAP
+    Un Java HashMap es una estructura de datos en Java que implementa la interfaz Map.
+    Proporciona mapeo de claves a valores y permite el almacenamiento y recuperación
+    eficientes de elementos basados en una clave. En un HashMap, cada elemento se almacena
+    como un par clave-valor.
+
+    Ejemplo:
+        import java.util.HashMap;
+
+        public class Main {
+          public static void main(String[] args) {
+            // Create a HashMap object called capitalCities
+            HashMap<String, String> capitalCities = new HashMap<String, String>();
+
+            // Add keys and values (Country, City)
+            capitalCities.put("England", "London");
+            capitalCities.put("Germany", "Berlin");
+            capitalCities.put("Norway", "Oslo");
+            capitalCities.put("USA", "Washington DC");
+            System.out.println(capitalCities);
+          }
+        }
+
+    - MÉTODOS:
+        - put(K key, V value): Agrega un par clave-valor al mapa.
+         Si la clave ya existe en el mapa, el valor asociado se sobrescribe
+         con el nuevo valor y el valor anterior se devuelve.
+        - get(Object key): Devuelve el valor asociado con la clave especificada,
+         o null si la clave no está presente en el mapa.
+        - remove(Object key): Elimina la entrada con la clave especificada del mapa
+         y devuelve el valor asociado a esa clave, o null si la clave no está presente.
+        - containsKey(Object key): Devuelve true si el mapa contiene la clave especificada,
+         o false de lo contrario.
+        - containsValue(Object value): Devuelve true si el mapa contiene el valor especificado, o false de lo contrario.
+        - keySet(): Devuelve un conjunto de todas las claves presentes en el mapa.
+        - values(): Devuelve una colección de todos los valores presentes en el mapa.
+        - entrySet(): Devuelve un conjunto de las entradas (pares clave-valor) presentes en el mapa.
+        - size(): Devuelve el número de entradas (pares clave-valor) en el mapa.
+        - isEmpty(): Devuelve true si el mapa no contiene ninguna entrada, o false de lo contrario.
+        - clear(): Elimina todas las entradas del mapa, dejándolo vacío.
+
+- HASHSET
+    HashSet es una implementación de la interfaz Set en Java que utiliza una tabla
+    hash para almacenar sus elementos. Un HashSet no permite elementos duplicados,
+    lo que significa que cada elemento en el conjunto debe ser único. Además,
+    no garantiza el orden de los elementos almacenados.
+
+    Ejemplo:
+        import java.util.HashSet;
+
+        public class Main {
+          public static void main(String[] args) {
+            HashSet<String> cars = new HashSet<String>();
+            cars.add("Volvo");
+            cars.add("BMW");
+            cars.add("Ford");
+            cars.add("BMW");
+            cars.add("Mazda");
+            System.out.println(cars);
+          }
+        }
+
+    add(E e): Agrega el elemento especificado al conjunto si no está presente.
+
+    addAll(Collection<? extends E> c): Agrega todos los elementos de la colección especificada
+    al conjunto si no están presentes.
+
+    remove(Object o): Elimina el elemento especificado del conjunto si está presente.
+
+    removeAll(Collection<?> c): Elimina todos los elementos del conjunto que están presentes
+    en la colección especificada.
+
+    retainAll(Collection<?> c): Retiene solo los elementos del conjunto que están presentes
+    en la colección especificada.
+
+    contains(Object o): Devuelve true si el conjunto contiene el elemento especificado.
+
+    containsAll(Collection<?> c): Devuelve true si el conjunto contiene todos los elementos
+    de la colección especificada.
+
+    isEmpty(): Devuelve true si el conjunto no contiene elementos.
+
+    size(): Devuelve el número de elementos en el conjunto.
+
+    clear(): Elimina todos los elementos del conjunto.
+
+    iterator(): Devuelve un iterador sobre los elementos en el conjunto.
+
+- ITERATOR
+    En Java, un Iterator es una interfaz que proporciona una forma de recorrer elementos
+    en una colección de forma secuencial, es decir, uno tras otro. Esta interfaz se utiliza
+    comúnmente para recorrer elementos en colecciones como List, Set, Map, etc.
+
+    Ejemplo:
+        import java.util.ArrayList;
+        import java.util.Iterator;
+
+        public class Main {
+          public static void main(String[] args) {
+
+            // Make a collection
+            ArrayList<String> cars = new ArrayList<String>();
+            cars.add("Volvo");
+            cars.add("BMW");
+            cars.add("Ford");
+            cars.add("Mazda");
+
+            // Get the iterator
+            Iterator<String> it = cars.iterator();
+
+            // Print the first item
+            System.out.println(it.next());
+          }
+        }
+
+    - Metodos
+        boolean hasNext(): Devuelve true si hay más elementos en la colección para iterar,
+         y false si no hay más elementos disponibles.
+
+        E next(): Devuelve el siguiente elemento en la colección y avanza el cursor interno
+         al siguiente elemento. Si no hay más elementos disponibles (cuando hasNext() devuelve
+         false), este método lanzará una excepción NoSuchElementException.
+
+        void remove(): Elimina el elemento actual de la colección subyacente. Este método
+         es opcional y no todos los iteradores lo implementan. Si la colección no admite
+         la eliminación (por ejemplo, una colección creada con
+         Collections.unmodifiableCollection()), llamar a este método lanzará una excepción
+         UnsupportedOperationException.
+
+- WRAPPET CLASSES/ CLASES CONTENEDORAS/ VALORES PARA ARRAYS
+    En Java, los "Java Wrapper Classes" (clases contenedoras en español) son clases
+    que proporcionan un envoltorio alrededor de los tipos de datos primitivos de Java.
+    Estas clases son útiles cuando necesitas tratar a los tipos primitivos como objetos.
+    Cada tipo primitivo tiene su clase contenedora correspondiente en Java.
+
+    byte - Byte
+    short - Short
+    int - Integer
+    long - Long
+    float - Float
+    double - Double
+    char - Character
+    boolean - Boolean
+
+    ArrayList<int> myNumbers = new ArrayList<int>(); // Invalid
+    ArrayList<Integer> myNumbers = new ArrayList<Integer>(); // Valid
+
+    - Metodos
+        -valueOf(primitiveType): Convierte un tipo primitivo en un objeto de la clase contenedora.
+        -intValue(), longValue(), floatValue(), doubleValue(), byteValue(), shortValue(),
+        charValue(), booleanValue(): Convierte el objeto de la clase contenedora
+        en su tipo primitivo correspondiente.
+        -toString(): Convierte el objeto de la clase contenedora en una cadena de caracteres.
+        -parseInt(String), parseLong(String), parseFloat(String), parseDouble(String),
+         parseByte(String), parseShort(String), parseBoolean(String): Convierte una cadena
+         de caracteres en el tipo primitivo correspondiente
+
+- TRY CATCH
+    El manejo de excepciones en Java, utilizando la estructura de control try...catch,
+    es una técnica fundamental para manejar errores y excepciones en el código. La estructura
+    try...catch se utiliza para rodear un bloque de código en el que pueden ocurrir excepciones,
+    y proporciona una forma de manejar estas excepciones de manera controlada.
+
+    Ejemplo:
+        try {
+            // Bloque de código en el que pueden ocurrir excepciones
+            // Aquí colocamos el código que queremos probar
+        } catch (ExcepcionTipo1 e) {
+            // Manejo de la excepción tipo 1
+        } catch (ExcepcionTipo2 e) {
+            // Manejo de la excepción tipo 2
+        } finally {
+            // Bloque opcional de código que siempre se ejecuta
+            // Se ejecuta ya sea que se lance una excepción o no
+        }
+
+    - Throw
+        La palabra clave throw en Java se utiliza para lanzar explícitamente
+        una excepción dentro de un programa.
+
+        Ejemplo:
+            public class Main {
+              static void checkAge(int age) {
+                if (age < 18) {
+                  throw new ArithmeticException("Access denied - You must be at least 18 years old.");
+                }
+                else {
+                  System.out.println("Access granted - You are old enough!");
+                }
+              }
+
+              public static void main(String[] args) {
+                checkAge(15); // Set age to 15 (which is below 18...)
+              }
+            }
+
+- REGULAR EXPRESSION / REGEX
+    Las expresiones regulares (regex) en Java son una secuencia de caracteres
+    que definen un patrón de búsqueda. Se utilizan principalmente para buscar,
+    filtrar o manipular texto basado en un patrón específico. En Java,
+    puedes trabajar con expresiones regulares utilizando la clase java.util.regex.
+
+    - Patrón: Una expresión regular se define utilizando un patrón, que es una secuencia
+     de caracteres que especifica un conjunto de cadenas.
+
+    - Matcher y Pattern: En Java, puedes usar la clase Pattern para compilar
+     un patrón de expresión regular y obtener un objeto Matcher que puede buscar y
+      manipular texto según ese patrón.
+
+    - Métodos comunes: Algunos métodos comunes de la clase Matcher incluyen:
+
+        matches(): Intenta hacer coincidir todo el texto de entrada con el patron.
+        find(): Busca la siguiente subcadena que coincida con el patrón.
+        group(): Devuelve la subcadena que coincide con el patrón.
+        replaceAll(): Reemplaza todas las ocurrencias del patrón con una cadena específica.
+
+    - Clases de caracteres: Las expresiones regulares en Java admiten una variedad de
+     clases de caracteres como \d para dígitos, \w para caracteres alfanuméricos, \s
+     para espacios en blanco, etc.
+
+    - Cuantificadores: Puedes usar cuantificadores como +, *, {n}, {n,}, {n,m} para
+     especificar la cantidad de ocurrencias de un elemento en la cadena.
+
+    Ejemplo:
+        public class Main {
+            public static void main(String[] args) {
+                // La cadena en la que queremos buscar el patrón
+                String texto = "Hola, ¿cómo estás?";
+
+                // El patrón que queremos buscar en la cadena
+                String patron = "hola";
+
+                // Compilar el patrón en un objeto Pattern
+                Pattern pattern = Pattern.compile(patron, Pattern.CASE_INSENSITIVE);
+
+                // Crear un objeto Matcher para la cadena de texto
+                Matcher matcher = pattern.matcher(texto);
+
+                // Verificar si el patrón está presente en la cadena
+                if (matcher.find()) {
+                    System.out.println("Se encontró el patrón en la cadena.");
+                } else {
+                    System.out.println("El patrón no se encontró en la cadena.");
+                }
+            }
+        }
+
+    - FLAGS
+        Las "flags" (indicadores o modificadores) en las expresiones regulares
+        de Java son opciones que puedes usar para modificar el comportamiento de
+        la expresión regular. Estas flags se pasan como argumentos adicionales al
+        compilar la expresión regular y se utilizan para controlar ciertos aspectos
+        de cómo se realiza la coincidencia de patrones.
+
+        CASE_INSENSITIVE ((?i)): Hace que la búsqueda de coincidencias sea
+         insensible a mayúsculas y minúsculas.
+
+        MULTILINE ((?m)): Hace que los metacaracteres ^ y $ coincidan con el inicio
+         y el final de cada línea en lugar de solo el inicio y el final de la cadena completa.
+
+        DOTALL ((?s)): Hace que el metacaracter . coincida con cualquier carácter
+        , incluidos los caracteres de nueva línea.
+
+        UNICODE_CASE ((?u)): Hace que la coincidencia de patrones sea sensible a Unicode.
+
+        CANON_EQ ((?c)): Hace que las coincidencias sean compatibles con Unicode
+         canon equivalente.
+
+    - METACHARACTERS / METACARACTERES
+        | (barra vertical): Se utiliza como operador OR para buscar coincidencias
+         con cualquiera de los patrones separados por |. Por ejemplo, cat|dog|fish
+          coincidirá con cualquier cadena que contenga "cat", "dog" o "fish".
+
+        . (punto): Coincide con cualquier carácter, excepto un salto de línea (\n).
+
+        ^ (caret o acento circunflejo): Coincide con el inicio de una cadena o el
+         inicio de una línea si se usa con la flag MULTILINE.
+
+        $ (signo de dólar): Coincide con el final de una cadena o el final de una
+         línea si se usa con la flag MULTILINE.
+
+        \d: Coincide con un dígito.
+
+        \s: Coincide con cualquier carácter de espacio en blanco.
+
+        \b: Coincide con una posición de límite de palabra, es decir, coincide con
+         la posición entre un carácter de palabra (\w) y un carácter que no es de palabra
+          (\W), o al inicio o al final de la cadena.
+
+        \uxxxx: Coincide con el carácter Unicode especificado por el número hexadecimal
+         xxxx. Por ejemplo, \u0041 coincidirá con "A".
+
+- LAMBDA
+    Las expresiones lambda en Java son una característica introducida en Java 8
+    que te permite escribir funciones anónimas de forma más concisa y legible.
+    Estas expresiones permiten tratar el código como datos, lo que facilita la
+    programación funcional en Java. Las expresiones lambda se utilizan principalmente
+    junto con interfaces funcionales, que son interfaces con un único método abstracto.
+
+    parameter -> expression
+    (parameter1, parameter2) -> expression
+
+    Ejemplo:
+        public class Main {
+          public static void main(String[] args) {
+            ArrayList<Integer> numbers = new ArrayList<Integer>();
+            numbers.add(5);
+            numbers.add(9);
+            numbers.add(8);
+            numbers.add(1);
+            numbers.forEach( (n) -> { System.out.println(n); } );
+          }
+        }
