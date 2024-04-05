@@ -6,13 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="_4EnLinea" />
         <module name="asd" />
         <module name="POO2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="_4EnLinea" target="21" />
       <module name="Aasd" target="21" />
+      <module name="Clase2" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

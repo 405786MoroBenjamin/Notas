@@ -59,6 +59,15 @@
         || : OR
         ! : NOT
 
+- COSAS PARA TEXTO
+    string.contains(string2) // Retorna true si lo contiene, es kay sentitive
+    string.equals(string2) // Retorna true si son iguales, key sensitive
+    string.concant(string2) // Junta 2 cadenas, y las retorna juntas
+    string.toLowerCase() // Retorna la cadena en
+    string.toUpperrCase() // Retorna la cadena en mayuscula
+    string.trim() // Saca los espacios del 1er y ultimo caracter
+    string.charAt(posicionN) // Se ingresa la posicion de un caracter, y se retorna el caracter que esta ahi
+
 - CONDICIONALES
     if(condition)
     {
